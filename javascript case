@@ -1,0 +1,16 @@
+var num = prompt("Please enter a number");
+    sum = 0;
+
+function oddishOrEvenish(num) {
+    while (num) {
+        sum += num%10;
+        num = Math.floor(num / 10);
+    }
+    num = sum;
+    if (sum % 2 == 0) {
+        return "even";
+    }
+    else ;
+        return "odd";
+}
+console.log(oddishOrEvenish(num));
